@@ -31,20 +31,21 @@ class _MyButtonState extends State<MyButton> {
         backgroundColor: Colors.orangeAccent,
       ),
       body: new Container(
-          child: new Center(
-        child: new Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            new Text(flutterText, style: new TextStyle(fontSize: 40.0)),
-            new Padding(padding: new EdgeInsets.all(10.0)),
-            new ElevatedButton(
-              onPressed: onPressedButton,
-              child: new Text("Actualizar",
-              style: new TextStyle(color: Colors.white)),
-            )
-          ],
-        ),
-      )),
+        child: new Center(
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new Text(flutterText, style: new TextStyle(fontSize: 40.0)),
+              new Padding(padding: new EdgeInsets.all(10.0)),
+              new ElevatedButton(
+                onPressed: onPressedButton,
+                child: new Text("Actualizar",
+                style: new TextStyle(color: Colors.white)),
+              )
+            ],
+          ),
+        )
+      ),
     );
   }
 }
